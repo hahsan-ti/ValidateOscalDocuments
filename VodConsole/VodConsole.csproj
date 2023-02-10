@@ -8,7 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ValidateOscalDocuments\VodLibrary.csproj" />
+    <ProjectReference Include="..\VodLibrary\VodLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="examples\correct-ssp.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="examples\incorrect-ssp.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
